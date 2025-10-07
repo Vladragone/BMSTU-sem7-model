@@ -1,0 +1,15 @@
+body {
+  background-color: #f8f9fa;
+  font-family: sans-serif;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+}
+input {
+  outline: none;
+}
