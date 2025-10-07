@@ -22,8 +22,6 @@ const generateTableNumbers = (digits, count = 10) => {
     }
     return combined;
   }
-
-  return [];
 };
 
 const generateAlgorithmicNumbers = (digits, count = 10, seed = 123456789) => {
