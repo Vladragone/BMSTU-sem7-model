@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+/* Заголовки */
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #93c5fd;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #60a5fa;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* Элементы управления */
+label {
+  display: inline-block;
+  margin: 6px 8px 6px 0;
+}
+
+input,
+select {
+  margin-left: 6px;
+  margin-top: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+select {
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.back-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 18px;
+  background: #1e40af;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #1d4ed8;
+}
+
+/* Матрица */
+.matrix-wrapper {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 8px;
+}
+
+th,
+td {
+  border: 1px solid #334155;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+.header-main th {
+  background: #1e293b;
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.cell {
+  width: 70px;
+  background: #0f172a;
+  border: 1px solid #475569;
+  color: white;
+  text-align: center;
+}
+
+.cell.diag {
+  background: #1e293b;
+  color: #60a5fa;
+}
+
+.cell:focus {
+  outline: 2px solid #2563eb;
+}
+
+/* Результаты */
+.results {
+  margin-top: 20px;
+}
+
+.results table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.results th {
+  background: #1e293b;
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.results td {
+  border: 1px solid #334155;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Подписи */
+.note {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+/* Цветовая индикация строк */
+.green-text td {
+  color: #4ade80;
+}
+
+.yellow-text td {
+  color: #facc15;
+}
+
+.red-text td {
+  color: #f87171;
+}
+
+/* Всплывающее предупреждение */
+.warning {
+  margin-top: 10px;
+  padding: 8px;
+  background: #7f1d1d;
+  border: 1px solid #f87171;
+  color: #fecaca;
+  border-radius: 6px;
+  font-size: 14px;
+}

@@ -1,4 +1,6 @@
 import React, { useState, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
+import "./index.css";
 
 const generateTableNumbers = (digits, count = 10) => {
   const base2 = [
@@ -40,7 +42,6 @@ const generateAlgorithmicNumbers = (digits, count = 10, seed = 123456789) => {
   return numbers;
 };
 
-
 const calculateRandomness = (numbers) => {
   const digits = numbers.join("").split("").map(Number);
   const n = digits.length;
@@ -73,6 +74,7 @@ const calculateRandomness = (numbers) => {
 };
 
 const App = () => {
+  const navigate = useNavigate();
   const [manualInput, setManualInput] = useState(Array(10).fill(""));
 
   const handleInput = (i, value) => {
@@ -156,6 +158,10 @@ const App = () => {
           </tr>
         </tbody>
       </table>
+
+      <button className="back-button" onClick={() => navigate("/")}>
+        Назад к выбору лабораторной работы
+      </button>
     </div>
   );
 };
