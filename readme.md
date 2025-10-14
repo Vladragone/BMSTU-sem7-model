@@ -1,0 +1,1 @@
+npm run dev внутри labs/labs
