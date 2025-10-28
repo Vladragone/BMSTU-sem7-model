@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Lab1 from "./pages/lab1";
 import Lab2 from "./pages/lab2";
+import Lab3 from "./pages/lab3";
 import "./App.css";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/lab1" element={<Lab1 />} />
         <Route path="/lab2" element={<Lab2 />} />
+        <Route path="/lab3" element={<Lab3 />} />
       </Routes>
     </Router>
   );
@@ -27,6 +29,9 @@ function Home() {
         </Link>
         <Link to="/lab2" className="nav-button green">
           Лабораторная работа 2
+        </Link>
+        <Link to="/lab3" className="nav-button green">
+          Лабораторная работа 3
         </Link>
       </nav>
     </div>
