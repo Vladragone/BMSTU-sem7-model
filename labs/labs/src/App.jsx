@@ -5,6 +5,7 @@ import Lab2 from "./pages/lab2";
 import Lab3 from "./pages/lab3";
 import Lab4 from "./pages/lab4";
 import Lab5 from "./pages/lab5";
+import Lab6 from "./pages/lab6";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/lab3" element={<Lab3 />} />
         <Route path="/lab4" element={<Lab4 />} />
         <Route path="/lab5" element={<Lab5 />} />
+        <Route path="/lab6" element={<Lab6 />} />
       </Routes>
     </Router>
   );
@@ -43,6 +45,9 @@ function Home() {
         </Link>
         <Link to="/lab5" className="nav-button green">
           Лабораторная работа 5
+        </Link>
+        <Link to="/lab6" className="nav-button green">
+          Лабораторная работа 6
         </Link>
       </nav>
     </div>
